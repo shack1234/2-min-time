@@ -14,7 +14,7 @@ Shadrack Anayo
 
 ## Live demo
 
-</https://newsapi-app.herokuapp.com/>
+
 ---
 ## User Stories
 As a user I want to, 
