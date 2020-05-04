@@ -1,0 +1,58 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+{% block styles%}
+{{ super() }}
+<link href="https://fonts.googleapis.com/css?family=Akronim|Bellefair|Joti+One" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static',filename='CSS/index.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="container" style="background-color:#000000; padding:20px; margin-top:0px; padding-top:40px; padding-bottom:400px;">
+        <div class="row" style="text-align:center; font-size:30px;">
+            <span style="font-size:50px; color:gold;font-family: 'Akronim', cursive;"></span>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-4"> 
+          <h1 style="font-family: 'Joti One',color:green; cursive; font-size:15px;"> PITCH CATEGORIES</h1>
+                    <a href="{{url_for('main.comedy')}}" style="font-family: 'Joti One',color:white; cursive; font-size:15px;">
+                    
+                        Comedy Pitches
+                    </a>
+                    <br>
+                    <a href="{{url_for('main.pick_up_line')}}" style="font-family: 'Joti One',color:green; cursive; font-size:15px;">
+                       
+                        Pick Up Lines
+                    </a>
+                    <br>
+                    <a href="{{url_for('main.promotion')}}" style="font-family: 'Joti One',color:black; cursive; font-size:15px;">
+                       
+                        Promotion Pitches
+                    </a>
+                    <br>
+                    <a href="{{url_for('main.sport')}}" style="font-family: 'Joti One', color:white;cursive; font-size:15px;">
+                       
+                        Sports Pitches
+                    </a>
+                    <br>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+            <div class="panel style="style="border: 3px solid #f2f2f2; padding:20px; margin-top:10px;">
+                <p style="font-family: 'Bellefair', serif; font-size:20px;">In life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful? To do so, write a pitch and impress someone or break yourself.</p>
+                
+                <div style="text-align:center;">
+                    <a href="{{url_for('main.new_pitch')}}">
+                        <br>
+                        <span >Add a new Pitch</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </hr>
+             <div class="all-pitches">
+             <h1 style="text-align:center;">All Category pitches  will be shown below</h1>
+                <hr> 
+                {{macro.displayPitches(pitches)}}
+        </div>
+    </div>
+{% endblock %}
