@@ -32,6 +32,7 @@ class ProdConfig(Config):
     #postgresql configurations
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://shadrack:1234@localhost/pitch'
+    
 class DevConfig(Config):
     '''
     Development  configuration child class
