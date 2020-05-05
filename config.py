@@ -4,6 +4,7 @@ class Config:
     '''
     General configuration parent class
     '''
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://shadrack:1234@localhost/pitch'
     SECRET_KEY = os.environ.get('SECRET_KEY')
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_TRACK_MODIFICATIONS=True
