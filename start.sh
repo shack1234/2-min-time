@@ -6,5 +6,3 @@ export MAIL_PASSWORD='S37499441'
 python3.6 manage.py server
 
 
-
-heroku addons:create heroku-postgresql
