@@ -13,8 +13,6 @@ Shadrack Anayo
 ---
 
 ## Live demo
-
-
 ---
 ## User Stories
 As a user I want to, 
