@@ -1,6 +1,6 @@
-# Project Name
+## Project Name
 
- ONE MINUTE PITCH
+ One minute pitch
 ---
 
 ## Description
@@ -30,7 +30,7 @@ To set up or to install you need:
 ## Cloning
 To clone, on your terminal
 * $ git clone 
-* $ cd News-Application
+* $ cd OneMinOitch-app
 ---
 ## Testing the Application
 To run the tests, on your terminal:
